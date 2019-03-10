@@ -1,0 +1,85 @@
+.Post {
+  display:grid;
+  grid-template-columns:1fr 1fr 6fr;
+  
+  font-size: 30px;
+  color:white;
+  margin: 50px 30px;
+  background: black;
+  border: 2px solid white;
+  grid-column-gap: 1cm; 
+}
+
+.kratkiOpisFilma{
+  color:white;
+  background:black;
+  padding: 2px;
+  margin-top: 20px;
+  display:flex;
+  flex-direction: column;
+}
+
+.Excerpt {
+  color:white;
+  padding: 0.5rem 0;
+  font-size: 20px;
+  background: black;
+  border-left: 2px solid white;
+  margin-left: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.myPic{
+  max-width: 200px;
+  min-width: 150px;
+}
+
+.Date {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 400;
+  color: var(--color-dark-grey, #000);
+}
+
+.Opis{
+  font-size: 22px;
+  color: white;
+  margin-top: 5px;
+}
+
+@media all and (max-width: 750px){
+  .Post{
+    background: black;
+    margin: 0px 4px;
+    display: grid;
+    grid-column-gap: 0cm;
+    margin: 10px;
+    border: 1px solid white;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: 
+    "a b"
+    "c c"
+  }
+  /* Post -> cili jedan post*/
+  .myPic {
+    grid-area: a;
+    width:90%;
+    margin-left:5px;
+    margin-top: 5px;
+  } 
+  .kratkiOpisFilma{
+    grid-area: b;
+    margin-top:3px;
+    margin-left:5px;
+  }
+  .text-parent{
+    max-height: 75px;
+  }
+  .Excerpt{
+    border:none;
+    margin-top: 3px;
+    grid-area: c;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+}

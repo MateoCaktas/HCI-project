@@ -1,0 +1,297 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  color:black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+  --color-primary: #494949;
+  --color-grey: #eeeeee;
+  --color-dark-grey: #776666;
+  --color-gold: #e67700;
+  --color-red: #ff0000;
+  --header-height: 52px;
+  --header-padding: 5px;
+
+  --z-index-menu: 1000;
+  --z-index-overlay: 999;
+}
+
+.mostPopularNaslov{
+  font-size: 30px;
+  margin: 30px;
+  color:white;
+}
+
+body {
+  margin-top:52px;
+  line-height: 1;
+    display: flex;
+    flex-direction:column;
+    color:white;
+    background: black;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid orange;
+}
+
+.figure {
+  max-width: 900px;
+  margin: auto;
+}
+.MarginedTopBot {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.figure__caption {
+  text-align: center;
+  color: var(--color-primary, #000);
+  padding-bottom: 0.5rem;
+  color:white;
+}
+@media only screen and (max-width: 750px) {
+  body.open {
+    overflow: hidden;
+  }
+}
+.tekst {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20pt;
+  color: white;
+}
+
+.main {
+  position: relative;
+}
+.main-text {
+  position:absolute;    
+  bottom:10px;
+  text-align: center;
+  width:100%;
+  color: white;
+  font-size: 35pt;    
+}
+.main-picture {
+  margin-top: 30px;
+  margin-left:15px;
+  margin-right:15px;
+  height: 350px;
+  width:98%;
+}
+
+.bottom-half {
+  display:grid;
+  grid-template-columns: 75% 25%;    
+}
+
+
+.main-2 {
+  margin: 15px;
+  background: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+}
+.side-news {
+  margin: 15px;
+  background: black;
+  border-style: solid;
+  border-color:orange;
+  border-width: 3px;
+}
+
+#news-line {
+  color: white;
+  margin:30px;
+  font-size:35px;
+}
+
+#news-text {
+  margin:30px;
+  font-size: 22px;
+  
+}
+
+.news-li-item {
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.toTopButton{
+  border-radius: 5%;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width:100px;
+  height:50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.toTopButton:hover{
+  cursor: pointer;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:50px;
+  border-top: 2px solid white;
+}
+
+.footer-text {
+  font-size: 25px;
+  display:flex;
+  justify-content: center;
+  padding-top: 10px;  
+}
+
+.slike-post {
+  display:grid;
+  grid-template-columns: 3fr 2fr 2fr;
+}
+
+.slika-2-post{
+  margin-top:10px;
+  margin-bottom:auto;
+}
+
+.slika-1-post{
+  max-width: 100%;
+}
+
+.slika-3-post{
+  margin:auto;
+}
+
+.figure1 {
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.figure2 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.figure3 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.testni-tekst{
+  font-size: 18px;
+  color: white;
+  padding:10px;
+}
+
+.Naslov-opisa{
+  color:white;
+  padding: 15px;
+}
+
+.testna-klasa{
+  color:white;  
+  border: 2px solid white;
+}
+.Post-text{
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Postzanra {
+  padding: 3px 0px;
+  color:white;
+  margin: auto;
+}
+.Post-ocjena {
+  color:white;
+  margin:auto;
+}
+
+@media only screen and (max-width: 750px) {
+ 
+  .main-picture{
+    height: 150px;
+    width: 92%;
+  }
+  .bottom-half{
+    grid-template-columns: 1fr;
+  }
+
+  .slike-post{
+    grid-template-columns:1fr; 
+  }
+
+  .figure1{
+    border:none;
+  }
+
+  .figure2,
+  .figure3{
+    display:none;
+  }
+
+  .testna-klasa{
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,76 @@
+.LoginForm {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  max-width: 400px;
+  max-height: 800px;
+  min-height: 300px;
+  margin: auto;
+  border: 2px solid orange;
+  background: black;
+}
+
+.LoginForm__input {
+  outline: none;
+  width: 90%;
+  border: solid 2px white;
+  margin: 40px auto;
+}
+
+.LoginForm__input:focus {
+  border-color: orange;
+}
+
+.LoginForm__buttonRegister,
+.LoginForm__buttonCancel,
+.LoginForm__buttonSignIn,
+.LoginForm__input {
+  padding: 0.5em;
+  font-size: inherit;
+  margin-top: 0.5rem;
+}
+
+.LoginForm__buttonRegister,
+.LoginForm__buttonCancel,
+.LoginForm__buttonSignIn{
+  background-color: var(--color-gatsby);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border: 2px white solid;
+  margin: 10px;
+}
+
+.buttonSet{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.LoginForm__buttonCancel{
+  font-size: 20px;
+  background: rgb(207, 1, 1);
+  margin-left: 50px;
+  width:100px;
+}
+
+.LoginForm__buttonSignIn{
+  font-size: 20px;
+  background: rgb(4, 109, 4);
+  float:right;
+  margin-right: 50px;
+  width: 100px;
+}
+
+.LoginForm__buttonRegister{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.loginMessage{
+  color:white;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,76 @@
+.Header {  
+  position: fixed;
+  --padding-top-bottom: var(--header-padding, 5px);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height, 5rem);
+  z-index: var(--z-index-menu, 1000);
+  margin-bottom: 10px;
+  background: black;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.Nav {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6,1fr);
+  align-items: stretch;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.NavLink:nth-child(5){
+  grid-column: 6;
+}
+.NavLink {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  --border-size: 4px;
+  display: inline-block;
+  padding: 0rem 0.75rem;
+  line-height: calc(var(--header-height) - 2 * var(--border-size));
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: all 0.25s linear;
+  word-wrap: none;
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Navlink -> botun*/
+.NavLink_active,
+.NavLink:hover {
+  color: var(--color-gatsby, orange);
+  border-bottom: 3px solid var(--color-gatsby,orange);
+  border-top: 3px solid var(--color-gatsby,orange);
+}
+
+.PrivateLink_active,
+.PrivateLink:hover {
+  color: var(--color-gold, orange);
+  border-bottom: 3px solid var(--color-gold, orange);
+}
+.Naslov{
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .Header{
+    margin-left: 5%;
+  }
+  .Nav {
+    display: none;
+  }
+  .Naslov{
+    display: show;
+  }
+}
